@@ -3,8 +3,9 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-// import { services } from "../constants";
+import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc"; // ✅ IMPORT HOC
 import StarsCanvas from "./canvas/Stars"; // ✅ Star background
 
 const ServiceCard = ({ index, title, icon }) => (
@@ -36,7 +37,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <div className="relative w-full min-h-[90vh] flex items-center justify-center px-6 py-16">
+    <div className="relative w-full min-h-[85vh] flex items-center justify-center px-6 py-16 scroll-mt-20">
       {/* 🌌 Star Background */}
       <StarsCanvas />
 
@@ -49,7 +50,8 @@ const About = () => {
 
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-4 text-secondary text-[17px] leading-[30px] text-justify'
+className='mt-4 text-secondary text-[17px] leading-[30px] text-left sm:text-justify'
+
         >
           Tech-savvy Software Engineer with 2+ years of hands-on experience building scalable web applications using JavaScript and TypeScript.
           Proficient in modern libraries like React and frameworks such as Next.js, and skilled in writing test cases using Jest.
@@ -60,7 +62,7 @@ const About = () => {
           frontend CI/CD pipelines using GitHub Actions.
         </motion.p>
 
-        {/* Uncomment this to show services */}
+        {/* Uncomment this block if you want to show services */}
         {/* 
         <div className='mt-20 flex flex-wrap gap-10'>
           {services.map((service, index) => (
@@ -73,4 +75,5 @@ const About = () => {
   );
 };
 
-export default About;
+// ✅ This makes #about anchor work for scrolling
+export default SectionWrapper(About, "about");

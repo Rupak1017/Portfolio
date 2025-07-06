@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+   <section id="home" className="relative w-full h-screen mx-auto scroll-mt-20">
       <div
         className={`absolute inset-0 top-[115px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -27,7 +27,7 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-<div className="absolute xs:bottom-2 bottom-20 w-full flex justify-center items-center space-x-12 pointer-events-auto">
+<div className="absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center space-x-12 pointer-events-auto">
   {/* Rotate Left */}
   <motion.div
     onClick={() => rotateScene("left")}
