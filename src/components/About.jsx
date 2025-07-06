@@ -47,21 +47,22 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
-Tech-savvy Software Engineer with 2+ years of hands-on experience building scalable web applications using JavaScript and TypeScript.
- Proficient in modern libraries like React and frameworks such as Next.js, with a strong focus on crafting intuitive, user-friendly 
- interfaces that elevate the user experience. 
+Tech-savvy Software Engineer with 2+ years of hands-on experience building scalable web applications using JavaScript and TypeScript. Proficient in modern 
+libraries like React and frameworks such as Next.js,
+ and skilled in writing test cases using Jest. Strong focus on crafting intuitive, user-friendly interfaces that elevate the user experience.
 <br/> 
 <br/>
- Well-versed in JS runtime environments like Node.js and Express, working with both SQL and NoSQL databases to deliver clean, performant, and scalable full-stack applications.
+ Well-versed in JS runtime environments like Node.js and Express, with experience working with both SQL and NoSQL databases to deliver clean, performant, and scalable full-stack applications. 
+ Experienced in deploying applications via Azure and configuring frontend CI/CD pipelines using GitHub Actions.
 
 
       </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
+    {/* 4 cards  */}
+      {/* <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
