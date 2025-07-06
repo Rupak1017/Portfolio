@@ -3,9 +3,9 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
+// import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import StarsCanvas from "./canvas/Stars"; // ✅ Star background
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -26,7 +26,6 @@ const ServiceCard = ({ index, title, icon }) => (
           alt='web-development'
           className='w-16 h-16 object-contain'
         />
-
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
@@ -37,34 +36,41 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    <div className="relative w-full min-h-[90vh] flex items-center justify-center px-6 py-16">
+      {/* 🌌 Star Background */}
+      <StarsCanvas />
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
-      >
-Tech-savvy Software Engineer with 2+ years of hands-on experience building scalable web applications using JavaScript and TypeScript. Proficient in modern 
-libraries like React and frameworks such as Next.js,
- and skilled in writing test cases using Jest. Strong focus on crafting intuitive, user-friendly interfaces that elevate the user experience.
-<br/> 
-<br/>
- Well-versed in JS runtime environments like Node.js and Express, with experience working with both SQL and NoSQL databases to deliver clean, performant, and scalable full-stack applications. 
- Experienced in deploying applications via Azure and configuring frontend CI/CD pipelines using GitHub Actions.
+      {/* 🧾 Main Content */}
+      <div className="relative z-10 max-w-5xl w-full">
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+        </motion.div>
 
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='mt-4 text-secondary text-[17px] leading-[30px] text-justify'
+        >
+          Tech-savvy Software Engineer with 2+ years of hands-on experience building scalable web applications using JavaScript and TypeScript.
+          Proficient in modern libraries like React and frameworks such as Next.js, and skilled in writing test cases using Jest.
+          Strong focus on crafting intuitive, user-friendly interfaces that elevate the user experience.
+          <br /><br />
+          Well-versed in JS runtime environments like Node.js and Express, with experience working with both SQL and NoSQL databases
+          to deliver clean, performant, and scalable full-stack applications. Experienced in deploying applications via Azure and configuring
+          frontend CI/CD pipelines using GitHub Actions.
+        </motion.p>
 
-      </motion.p>
-    {/* 4 cards  */}
-      {/* <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div> */}
-    </>
+        {/* Uncomment this to show services */}
+        {/* 
+        <div className='mt-20 flex flex-wrap gap-10'>
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
+        */}
+      </div>
+    </div>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;
