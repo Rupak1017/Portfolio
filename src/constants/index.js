@@ -19,9 +19,9 @@ import {
   Helix,
   Virufy,
   IIT,
-  carrent,
-  jobit,
-  tripguide,
+  MovieHub,
+  SnapSight,
+  Jarvis,
   threejs,
 } from "../assets";
 
@@ -202,67 +202,149 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Jarvis AI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+      "Engineered a Generative AI–powered platform using MERN stack, enabling real-time collaboration with up to 10 users and integrated Google Gemini for live code and content assistance.",
+tags: [
+    {
+    name: "javascript",
+    color: "yellow-text-gradient", // JavaScript = yellow
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    name: "react",
+    color: "blue-text-gradient", // React = blue
   },
   {
-    name: "Trip Guide",
+    name: "nodejs",
+    color: "green-text-gradient", // Node.js = green
+  },
+  {
+    name: "express",
+    color: "gray-text-gradient", // Express = neutral/gray
+  },
+  {
+    name: "mongodb",
+    color: "green-text-gradient", 
+  },
+  {
+    name: "websockets",
+    color: "orange-text-gradient", // WebSockets = real-time = orange
+  },
+  {
+    name: "web containers",
+    color: "cyan-text-gradient", // ONLY this one = cyan
+  },
+  {
+    name: "gemini",
+    color: "purple-text-gradient", // Gemini = LLM vibes = purple
+  },
+  {
+    name: "tailwind",
+    color: "pink-text-gradient", // Tailwind = pink
+  },
+  {
+    name: "sentry",
+    color: "orange-text-gradient", // error tracking
+  },
+],
+    image: Jarvis,
+    source_code_link: "https://jarvis-ai-five.vercel.app/",
+  },
+  {
+    name: "MovieHub",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Crafted and launched a responsive React-based front-end application to showcase trending and popular movies and TV series trailers, integrating external APIs and ensuring smooth experience across devices.",
+tags: [
+      {
+    name: "javascript",
+    color: "yellow-text-gradient", // JavaScript = yellow
+  },
+  {
+    name: "react",
+    color: "blue-text-gradient", // React = blue
+  },
+  {
+    name: "redux",
+    color: "purple-text-gradient", // reuse = Gemini
+  },
+  {
+    name: "jest",
+    color: "orange-text-gradient", // reuse = WebSockets
+  },
+  {
+    name: "react testing library",
+    color: "pink-text-gradient", // reuse = Tailwind
+  },
+  {
+    name: "azure",
+    color: "gray-text-gradient", // Express = neutral/gray
+  },
+  {
+    name: "webpack",
+    color: "yellow-text-gradient", // reuse = JavaScript
+  },
+  {
+    name: "restapi",
+    color: "green-text-gradient", // reuse = Node.js
+  },
+
+  {
+    name: "tailwind",
+    color: "purple-text-gradient", // alt reuse to avoid pink clash with scss
+  },
+    {
+    name: "microsoft clarity",
+    color: "blue-text-gradient", // session replay / analytics
+  },
+],
+    image: MovieHub,
+    source_code_link: "https://black-island-01206f710.6.azurestaticapps.net/",
+  },
+  {
+    name: "SnapSight",
+    description:
+      "Built and launched a post-centric social platform from scratch, enabling secure access and interactive content sharing while validating product assumptions through early traction and meaningful engagement.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+  {
+    name: "ejs",
+    color: "gray-text-gradient", // server-side templates, neutral tone
+  },
+  {
+    name: "tailwind css",
+    color: "pink-text-gradient", // same as "css"
+  },
+  {
+    name: "javascript",
+    color: "yellow-text-gradient", // frontend scripting
+  },
+  {
+    name: "nodejs",
+    color: "green-text-gradient", // backend runtime
+  },
+  {
+    name: "express",
+    color: "gray-text-gradient", // lightweight backend framework
+  },
+  {
+    name: "mongodb",
+    color: "green-text-gradient", // same as nodejs
+  },
+  {
+    name: "passport.js",
+    color: "purple-text-gradient", // authentication
+  },
+  {
+    name: "jest",
+    color: "orange-text-gradient", // reuse = WebSockets
+  },
+  {
+  name: "lighthouse",
+  color: "orange-text-gradient", // matches performance/insights theme
+}
+
+],
+    image:SnapSight,
+    source_code_link: "https://snapsight.glitch.me/",
   },
 ];
 

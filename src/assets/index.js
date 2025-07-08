@@ -26,9 +26,9 @@ import IIT from "./company/IIT.png";
 import Helix from "./company/Helix.jpeg";
 import Virufy from "./company/Virufy.jpeg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import MovieHub from "./MovieHub.jpg";
+import SnapSight from "./snapsight.jpg";
+import Jarvis from "./Jarvis.jpeg";
 
 export {
   logo,
@@ -56,7 +56,7 @@ export {
   IIT,
   Helix,
   Virufy,
-  carrent,
-  jobit,
-  tripguide,
+  MovieHub,
+  SnapSight,
+  Jarvis,
 };

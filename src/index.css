@@ -126,6 +126,36 @@
   transform: translateZ(0);
 }
 
+.yellow-text-gradient {
+  background: linear-gradient(to top, #facc15, #eab308); /* yellow-400 to yellow-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gray-text-gradient {
+  background: linear-gradient(to top, #9ca3af, #6b7280); /* gray-400 to gray-600 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-text-gradient {
+  background: linear-gradient(to top, #a855f7, #7e22ce); /* purple-500 to purple-700 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.violet-text-gradient {
+  background: linear-gradient(to top, #8b5cf6, #6d28d9); /* violet-500 to violet-700 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyan-text-gradient {
+  background: linear-gradient(to top, #22d3ee, #06b6d4); /* cyan-400 to cyan-600 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
