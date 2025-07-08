@@ -19,9 +19,8 @@ import {
   Helix,
   Virufy,
   IIT,
-  MovieHub,
-  SnapSight,
-  Jarvis,
+
+  
   threejs,
 } from "../assets";
 
@@ -247,7 +246,7 @@ tags: [
     color: "orange-text-gradient", // error tracking
   },
 ],
-    image: Jarvis,
+    image:  "/Jarvis.jpeg",
     source_code_link: "https://jarvis-ai-five.vercel.app/",
   },
   {
@@ -297,7 +296,7 @@ tags: [
     color: "blue-text-gradient", // session replay / analytics
   },
 ],
-    image: MovieHub,
+    image: "/moviehub.jpg",
     source_code_link: "https://black-island-01206f710.6.azurestaticapps.net/",
   },
   {
@@ -343,7 +342,7 @@ tags: [
 }
 
 ],
-    image:SnapSight,
+    image: "/snapsight.jpg",
     source_code_link: "https://snapsight.glitch.me/",
   },
 ];

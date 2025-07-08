@@ -26,9 +26,9 @@ import IIT from "./company/IIT.png";
 import Helix from "./company/Helix.jpeg";
 import Virufy from "./company/Virufy.jpeg";
 
-import MovieHub from "./moviehub.jpg";
-import SnapSight from "./snapsight.jpg";
-import Jarvis from "./Jarvis.jpeg";
+
+
+
 
 export {
   logo,
@@ -56,7 +56,7 @@ export {
   IIT,
   Helix,
   Virufy,
-  MovieHub,
-  SnapSight,
-  Jarvis,
+
+ 
+ 
 };
