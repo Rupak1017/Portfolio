@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useGLTF, useProgress } from "@react-three/drei";
-import ComputersCanvas from "../components/canvas/ComputersCanvas";
+import { ComputersCanvas } from "../components/canvas";
+
 
 
 import { Typewriter } from "react-simple-typewriter";
