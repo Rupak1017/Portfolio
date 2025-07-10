@@ -1,26 +1,41 @@
-import { BrowserRouter } from "react-router-dom";
-
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+// src/App.jsx
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import Splash from "./pages/Splash";
+import Portfolio from "./pages/Portfolio";
 
 const App = () => {
+  const [ready, setReady] = useState(false);
+  const [skipSplash, setSkipSplash] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("visitedPortfolio")) {
+      setSkipSplash(true);
+    }
+  }, []);
+
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            skipSplash ? (
+              <Navigate to="/portfolio" replace />
+            ) : (
+              <Splash onReady={() => setReady(true)} />
+            )
+          }
+        />
+        <Route path="/portfolio" element={<Portfolio />} />
+        {/* Optional: fallback */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+
+      {/* Navigate once Splash finishes */}
+      {ready && <Navigate to="/portfolio" replace />}
     </BrowserRouter>
   );
-}
+};
 
 export default App;
