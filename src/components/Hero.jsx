@@ -1,32 +1,22 @@
 // src/components/Hero.jsx
 
-import React, { useState, useEffect } from "react";
+import React, { lazy, Suspense } from "react";
 import { styles } from "../styles";
-import useIdle from "../hooks/useIdle"; // the requestIdleCallback hook
 
-export default function Hero() {
-  const idle = useIdle();
+// Lazy‐load heavy deps
+const MotionDiv = lazy(() =>
+  import("framer-motion").then((mod) => ({ default: mod.motion.div }))
+);
+// Import from the actual file name (Computers.jsx) which exports ComputersCanvas
+const ComputersCanvas = lazy(() => import("./canvas/Computers"));
 
-  // state to hold dynamically imported components
-  const [MotionDiv, setMotionDiv] = useState(null);
-  const [ComputersCanvas, setComputersCanvas] = useState(null);
-
-  // Once idle, load framer-motion's motion.div and your canvas
-  useEffect(() => {
-    if (!idle) return;
-
-    import("framer-motion")
-      .then((m) => m.motion.div)
-      .then((Comp) => setMotionDiv(() => Comp));
-
-    import("./canvas/Computers")
-      .then((m) => m.default)
-      .then((Comp) => setComputersCanvas(() => Comp));
-  }, [idle]);
-
+const Hero = () => {
   return (
-    <section id="home" className="relative w-full h-screen mx-auto scroll-mt-20">
-      {/* Hero text paints immediately */}
+    <section
+      id="home"
+      className="relative w-full h-screen mx-auto scroll-mt-20"
+    >
+      {/* Hero text */}
       <div
         className={`absolute inset-0 top-[115px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -46,12 +36,14 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 3D Canvas: only mounted after idle */}
-      {ComputersCanvas && <ComputersCanvas />}
+      {/* 3D Canvas */}
+      <Suspense fallback={null}>
+        <ComputersCanvas />
+      </Suspense>
 
-      {/* Rotate buttons: only mounted after idle */}
-      {MotionDiv && (
-        <div className="absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center space-x-12 pointer-events-auto z-10">
+      {/* Rotate Buttons */}
+      <div className="absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center space-x-12">
+        <Suspense fallback={null}>
           <MotionDiv
             onClick={() => window.rotateScene("left")}
             whileHover={{ scale: 1.05, opacity: 1 }}
@@ -90,7 +82,9 @@ export default function Hero() {
               Pinch and Rotate Left
             </span>
           </MotionDiv>
+        </Suspense>
 
+        <Suspense fallback={null}>
           <MotionDiv
             onClick={() => window.rotateScene("right")}
             whileHover={{ scale: 1.05, opacity: 1 }}
@@ -129,8 +123,10 @@ export default function Hero() {
               Pinch and Rotate Right
             </span>
           </MotionDiv>
-        </div>
-      )}
+        </Suspense>
+      </div>
     </section>
   );
-}
+};
+
+export default Hero;
