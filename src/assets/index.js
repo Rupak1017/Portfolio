@@ -18,7 +18,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import IIT from "./company/IIT.png";
-import Helix from "./company/Helix.jpeg";
+import Helix from "./company/Helix.svg";
 import Virufy from "./company/Virufy.jpeg";
 
 

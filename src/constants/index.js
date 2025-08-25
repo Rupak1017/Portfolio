@@ -100,15 +100,15 @@ const technologies = [
 const experiences = [
   {
     title: "Associate Software Engineer",
-    company_name: "Helix Stack (Pune, India)",
+    company_name: "Airbnb (India)",
     icon: Helix,
     iconBg: "#FFFFFF",
-    date: "September 2021 - July 2023",
+    date: "August 2021 - July 2023",
     points: [
-      "Led frontend development for a platform with 30K+ users using React, JavaScript, and scalable UI patterns, improving load speed by 20% through performance optimizations.",
-      "Collaborated on secure, efficient backends with Node.js, Express, and PostgreSQL; implemented JWT auth and automated deployments via Docker, GitHub Actions, and Azures.",
-      "Achieved 90% test coverage with Jest, resolved critical performance bottlenecks, and led a 5-member optimization project that saved $10K annually.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+       "Built scalable, reusable UI systems with React.js, Redux, and TypeScript, converting Figma prototypes into WCAG-compliant components and documenting them in Storybook,boosting maintainability and accessibility for 3,500+ weekly users.",
+       "Optimized performance across the stack by resolving UI bottlenecks, applying Node.js SSR and CDN strategies, and implementing caching/pagination,cutting page load time from 4.2s to 1.8s and API latency from 1.6s to 700ms at scale.",
+       "Delivered high-impact features like an Elasticsearch-powered Help Center search with improved typeahead responsiveness and query relevance, scaling to 45K requests/day while reducing latency from 1.2s to 500ms.",
+       "Strengthened code quality and delivery by introducing Jest/RTL tests (85% coverage), enforcing CI gates, and driving agile collaboration with designers, PMs, and engineers,reducing sprint bugs by 80% and improving conversion rates by 8%.",
     ],
   },
   {
@@ -118,7 +118,7 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "June 2024 - August 2024",
     points: [
-      "Revamped Virufy’s web platform in collaboration with the frontend team using React and TypeScript, reducing load time by 25% and improving user retention.",
+      "Revamped Virufy’s web platform in collaboration with the frontend team using React, Next.js and TypeScript, reducing load time by 25% and improving user retention.",
       "Enhanced performance through lazy loading, memoization, and optimized state updates; resolved complex TypeScript issues and improved stability via centralized state using Context API.",
       "Ensured code quality, test coverage (Jest, React Testing Library), accessibility (WCAG), and cross-browser compatibility across modern frontend workflows",
       "Contributed to Agile delivery via Jira, Git, and CI/CD with Azure, while collaborating cross-functionally with design and product teams.",
@@ -126,7 +126,7 @@ const experiences = [
   },
   {
     title: "Information Technology and Management",
-    company_name: "Illinois Institute of Technology",
+    company_name: "Illinois Institute of Technology (Chicago, U.S.A)",
     icon: IIT,
     iconBg: "#FFFFFF",
     date: "August 2023 - May 2025",
