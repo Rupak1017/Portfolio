@@ -12,6 +12,7 @@ import {
   figma,
   docker,
   Helix,
+  Uber,
   Virufy,
   IIT,
   threejs,
@@ -120,7 +121,7 @@ const experiences = [
     points: [
       "Revamped Virufy’s web platform in collaboration with the frontend team using React, Next.js and TypeScript, reducing load time by 25% and improving user retention.",
       "Enhanced performance through lazy loading, memoization, and optimized state updates; resolved complex TypeScript issues and improved stability via centralized state using Context API.",
-      "Ensured code quality, test coverage (Jest, React Testing Library), accessibility (WCAG), and cross-browser compatibility across modern frontend workflows",
+      "Ensured code quality, test coverage (Jest, React Testing Library), accessibility (WCAG), and cross-browser compatibility across modern frontend workflows.",
       "Contributed to Agile delivery via Jira, Git, and CI/CD with Azure, while collaborating cross-functionally with design and product teams.",
     ],
   },
@@ -134,7 +135,19 @@ const experiences = [
       "Graduated with a degree in Information Technology, specializing in Full-Stack Web Development, with a 4.0 GPA.",
       "Served as a Teaching Assistant for 2 semesters, supporting student learning and coursework.",
       "Recipient of the Excellent Student Award for academic excellence and active contributions to the university through leadership in student societies, event organization, and mentorship roles.",
-      
+
+    ],
+  },
+  {
+    title: "Software Engineer (Contract)",
+    company_name: "Uber (U.S.A)",
+    icon: Uber,
+    iconBg: "#FFFFFF",
+    date: "July 2025 - Present",
+    points: [
+      "Engineered and optimized 10+ modular UI components with React, Redux, and TypeScript for a real-time customer support dashboard, supporting 5,000+ weekly sessions and reducing triage time by 22%.",
+      "Enhanced dashboard performance by applying memoization, lazy loading, code-splitting, Redis caching, and MySQL query optimization, reducing TTI by 40% and latency by 37% under concurrent usage.",
+      "Integrated Google Maps API with WebSocket/ Kafka streams and built RESTful APIs using Node.js and Python to deliver real-time trip insights and ensure accurate data flow across 4+ reporting workflows for global support teams.",
     ],
   },
 

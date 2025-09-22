@@ -20,6 +20,7 @@ import threejs from "./tech/threejs.svg";
 import IIT from "./company/IIT.png";
 import Helix from "./company/Helix.svg";
 import Virufy from "./company/Virufy.jpeg";
+import Uber from "./company/uber.png";
 
 
 
@@ -47,6 +48,7 @@ export {
   IIT,
   Helix,
   Virufy,
+  Uber,
 
  
  
