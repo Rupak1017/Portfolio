@@ -252,7 +252,7 @@ tags: [
   },
 ],
     image: "/moviehub.jpg",
-    source_code_link: "https://black-island-01206f710.6.azurestaticapps.net/",
+    source_code_link: "https://movie-hub-murex.vercel.app/",
   },
   {
     name: "SnapSight",
