@@ -28,7 +28,7 @@ const About = () => {
 className='mt-4 text-secondary text-[17px] leading-[30px] text-left sm:text-justify'
 
         >
-          Software Engineer with 2.5+ years of experience building scalable, consumer-facing platforms in transportation, healthcare, hospitality, and AI. Specialized in JavaScript and TypeScript with expertise in libraries like React.js, and frameworks like Next.js
+          Software Engineer with 3 years of experience building scalable, consumer-facing platforms in transportation, healthcare, hospitality, and AI. Specialized in JavaScript and TypeScript with expertise in libraries like React.js, and frameworks like Next.js
            delivering high-performing, accessible, and responsive interfaces with Jest for testing. Optimized speed and scalability for applications serving 50K+ daily users while streamlining CI/CD pipelines using Azure, Docker, and GitHub Actions.
           <br /><br />
           Well-versed in JS runtime environments like Node.js and Express, with experience working with both SQL and NoSQL databases. Skilled in Python for object-oriented programming and backend integration, ensuring clean, performant, and scalable full-stack applications.
